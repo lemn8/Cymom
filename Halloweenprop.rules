@@ -1,0 +1,7 @@
+rule "Halloweenprop"
+when
+    Item Halloweenprop changed to ON
+then
+    Thread::sleep(7000)
+    Halloweenprop.sendCommand(OFF)
+end
